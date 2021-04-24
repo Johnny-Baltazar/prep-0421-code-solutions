@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+      align-items: stretch;
+    }
+
+    img {
+      width: 100%;
+      padding: 30px;
+    }
+
+    h3 {
+      text-align: left;
+      margin: 30px;
+    }
+
+    p {
+      margin: 30px;
+    }
+  </style>
+</head>
+<body>
+<!-- Complete the HTML here -->
+<h1>Indiana Jones</h1>
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <img src="images/raiders.jpg">
+      <h3>Raiders of the Lost Ark</h3>
+        <p>A short paragraph of this film. This film is about Indiana Jones
+        searching for ancient artifacts, and fighting off Nazis.
+        </p>
+    </div>
+    <div class="column">
+      <img src="images/temple.jpg">
+      <h3>Temple of Doom</h3>
+        <p>A short paragraph about this film. This film is about Indiana Jones
+        looking for more ancient artifacts, and fighting off more bad people.
+        </p>
+    </div>
+    <div class="column">
+      <img src="images/crusade.png">
+      <h3> The Last Crusade</h3>
+        <p>Short paragraph about the film. This is the third film of
+        Indiana Jones looking for more ancient artifacts, and fighting
+        off Nazis once again. This was not actually the last crusade because
+        Indy comes back out of retirment years later.
+        </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
